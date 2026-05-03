@@ -28,6 +28,7 @@ jobs:
           echo '${{ toJson(null) }}'
       - env:
           foo: ok
-          bar: 'a${{ 3 }}'
+          bar: 'a${{ inputs.text }}'
+          baz: inputs.text
         run: |
-          echo '${{ env.foo }}, ${{ env.bar }}'
+          echo '${{ env.foo }}, ${{ env.bar }}, ${{ env.baz }}'
