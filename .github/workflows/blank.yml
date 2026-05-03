@@ -23,7 +23,8 @@ jobs:
           echo '--- inputs ---'
           echo '${{ toJson(inputs) }}'
           echo '${{ toJson('a') }}'
+          echo '${{ toJson('') }}'
           echo '${{ toJson(10) }}'
           echo '${{ toJson(null) }}'
-          echo '${{ toJson(fromJson('{"a": 1, "b": [1,2], "c": {"x":1}, "d":null, "e":"A"}')) }}'
+          echo '${{ toJson(fromJson('{"a": 1, "b": [1,2], "c": {"x":1}, "d":null, "e":"A", "f":""}')) }}'
           
