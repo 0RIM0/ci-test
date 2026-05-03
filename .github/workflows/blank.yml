@@ -27,4 +27,8 @@ jobs:
           echo '${{ toJson(10) }}'
           echo '${{ toJson(null) }}'
           echo '${{ toJson(fromJson('{"a": 1, "b": [1,2], "c": {"x":1}, "d":null, "e":"A", "f":""}')) }}'
+          echo '${{ true && 100 || 200 }}'
+          echo '${{ false && 100 || 200 }}'
+          echo '${{ false && 0 || 200 }}'
+          echo '${{ true && 0 || 200 }}'
           
